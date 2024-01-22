@@ -6,7 +6,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-ul {
+nav, ul {
     list-style: none;
 }
 
@@ -20,6 +20,54 @@ a:hover {
     opacity: 1;
 }
 
+/* HERADER */
+header {
+    /* background-color:  red; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #222;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+header nav ul {
+    display:  flex;
+    /* flex-direction: row; */
+}
+
+header li a {
+    color: #191c03;
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child {
+    margin-left:  0px;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
 
 
+/* NESSA SECAO FAZEMOS O MENU RESPONSÍVEL */
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
 
+    header img {
+        margin: 15px;
+    }
+}
